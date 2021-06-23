@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>DragonSystem</title>
+</head>
+<body>
+	<!-- Imports -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<style>
+		@import url("main.css");
+	</style>
+
+	<script src="main.js"></script>
+	<script src="dsapi.js"></script>
+
+	<div id="main_menu">
+		<div onclick="shutdown_system();">Shutdown</div>
+		<div onclick="reload_system();">Reload</div>
+		<hr>
+		<div onclick="github();">GitHub</div>
+                <div onclick="discord_server()">Discord Server</div>
+                <hr>
+		<div onclick="run_documentation()">Documentation</div>
+		<div onclick="crazy_error()">Crazy Error</div>
+		<div onclick="bsod()">BSOD</div>
+                <div onclick="pl()">Programming languages</div>
+                <div onclick="run_calc()">Calculator</div>
+	</div>
+
+	<script type="text/javascript">
+		var mouse_x = 0;
+		var mouse_y = 0;
+		menu_obj = document.getElementById("main_menu");
+		function mousemove(event) {
+			if (document.attachEvent != null) {
+				mouse_x = window.event.pageX;
+				mouse_y = window.event.pageY;
+			} else if (!document.attachEvent && document.addEventListener) {
+				mouse_x = event.pageX;
+				mouse_y = event.pageY;
+			}
+		}
+		function show_menu(e) {
+			mousemove(e);
+			menu_obj.style.left = mouse_x + "px";
+			menu_obj.style.top = mouse_y + "px";
+			menu_obj.style.visibility = "visible";
+			return false;
+		}
+		function hide_menu(e) { menu_obj.style.visibility = "hidden"; }
+
+		document.oncontextmenu = show_menu;
+		document.onclick = hide_menu;
+	</script>
+
+	<style type="text/css">
+	#main_menu {
+		position: absolute;
+		width: 200px;
+		border: 1px solid #000000;
+		background-color: #EEEEEE;
+		font-family: "Arial";
+		line-height: 20px;
+		font-size: 14px;
+		z-index: 99;
+		visibility: hidden;
+		}
+	#main_menu > div {
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+	#main_menu > div:hover {
+		background-color: #6666FF;
+		color: #FFFFFF;
+		cursor: default;
+	}
+    </style>
+
+	<!-- Shutdown System -->
+
+	<img src="Images\MyComputerIcon0.png" height="40" width="40" onclick="shutdown_system()"></img>
+	<p onclick="shutdown_system()"><font color="orange">Shutdown</font></p>
+
+	<!-- Reload System -->
+
+	<img src="Images\MyComputerIcon0.png" height="40" width="40" onclick="reload_system()"></img>
+	<p onclick="reload_system()"><font color="orange">Reload</font></p>
+
+	<!-- Documentation -->
+
+	<img src="Images\MyComputerIcon0.png" height="40" width="40" onclick="run_documentation()"></img>
+	<p onclick="run_documentation()"><font color="orange">Documentation</font></p>
+
+	<!-- Crazy Error -->
+
+	<img src="Images\ErrorIcon0.png" height="40" width="40" onclick="crazy_error()"></img>
+	<p onclick="crazy_error()"><font color="red">Crazy</font></p>
+
+	<!-- Sounds -->
+
+	<img src="Images\MusicIcon0.png" height="40" width="40" onclick="sounds_folder()"></img>
+	<p onclick="sounds_folder()"><font color="orange">Sounds</font></p>
+
+	<!-- BsOD -->
+
+	<img src="Images\ErrorIcon0.png" height="40" width="40" onclick="bsod()"></img>
+	<p onclick="bsod()"><font color="red">BsOD</font></p>
+
+	<!-- Programming languages -->
+
+	<img src="Images\HammerImg0.png" height="40" width="40" onclick="pl()"></img>
+	<p onclick="pl()"><font color="red">Programming languages</font></p>
+
+	<!-- Calculator -->
+
+	<img src="Images\CalcIcon0.png" height="40" width="40" onclick="run_calc()"></img>
+	<p onclick="run_calc()"><font color="red">Calculator</font></p>
+
+	<!-- Load sound -->
+	
+	<audio src="Sounds/Sounds/Startup.mp3" type="audio/mp3" autoplay></audio>
+</body>
+</html>
