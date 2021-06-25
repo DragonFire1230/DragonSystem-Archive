@@ -1,10 +1,10 @@
 function crazy_error() {
 			let crazy = document.createElement('img');
-			crazy.className = 'animate__animated animate__zoomInDown';
+			crazy.className = 'animate__animated animate__flipInY';
 			crazy.src='Images/CrazyMsg0.png'
 			setTimeout(() => { 
 				document.body.append(crazy);
-				crazy_error(); }, 50);
+				crazy_error(); }, 30);
 }
 function nokia3310remix() {
 			let nokiaremix = document.createElement('audio');
