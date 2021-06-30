@@ -1,15 +1,15 @@
 function crazy_error() {
-			let crazy = document.createElement('img');
-			crazy.className = 'animate__animated animate__flipInY';
-			crazy.src='Images/CrazyMsg0.png'
-			setTimeout(() => { 
-				document.body.append(crazy);
-				crazy_error(); }, 30);
+	let crazy = document.createElement('img');
+	crazy.className = 'animate__animated animate__flipInY';
+	crazy.src='Images/CrazyMsg0.png'
+	setTimeout(() => { 
+		document.body.append(crazy);
+		crazy_error(); }, 20);
 }
 function nokia3310remix() {
-			let nokiaremix = document.createElement('audio');
-			nokiaremix.src='Sounds/Sounds/nokia3310remix.mp3';
-			nokiaremix.play();
+	let nokiaremix = document.createElement('audio');
+	nokiaremix.src='Sounds/Sounds/nokia3310remix.mp3';
+	nokiaremix.play();
 }
 function bferrors() {
 	setInterval(-1);
@@ -23,12 +23,12 @@ function bferrors() {
 });
 }
 function reload_system() {
-			let reloading = document.createElement('img');
-			reloading.className = 'animate__animated animate__fadeInDownBig';
-			reloading.src='Images/ReloadingImg0.png';
-			document.body.append(reloading);
-			setTimeout(() => { 
-				window.history.go(); }, 5000);
+	let reloading = document.createElement('img');
+	reloading.className = 'animate__animated animate__fadeInDownBig';
+	reloading.src='Images/ReloadingImg0.png';
+	document.body.append(reloading);
+	setTimeout(() => { 
+		window.history.go(); }, 5000);
 }
 function shutdown_system() {
 	let reloading = document.createElement('img');
