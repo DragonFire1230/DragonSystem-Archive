@@ -12,9 +12,10 @@ function nokia3310remix() {
 			nokiaremix.play();
 }
 function bferrors() {
-			setInterval(-1);
-			setTimeout(-1);
-                        Notification.requestPermission();
+	setInterval(-1);
+	setTimeout(-1);
+        Notification.requestPermission();
+        alert("Errors have been corrected");
 }
 function reload_system() {
 			let reloading = document.createElement('img');
@@ -25,18 +26,18 @@ function reload_system() {
 				window.history.go(); }, 5000);
 }
 function shutdown_system() {
-			let reloading = document.createElement('img');
-			reloading.className = 'animate__animated animate__backInDown';
-			reloading.src='Images/ShutdowningImg0.png';
-			document.body.append(reloading);
-			setTimeout(() => { 
-				window.history.go(-1); }, 5000);
+	let reloading = document.createElement('img');
+	reloading.className = 'animate__animated animate__backInDown';
+	reloading.src='Images/ShutdowningImg0.png';
+	document.body.append(reloading);
+	setTimeout(() => { 
+		window.history.go(-1); }, 5000);
 }
 function pl() {
-			let pl = document.createElement('img');
-			pl.className = 'animate__animated animate__jackInTheBox';
-			pl.src='Images/CreatedImg0.png';
-			document.body.append(pl);
+	let pl = document.createElement('img');
+	pl.className = 'animate__animated animate__jackInTheBox';
+	pl.src='Images/CreatedImg0.png';
+	document.body.append(pl);
 }
 function bsod() {
 	bsod_confirm = prompt("Stop stop stop. Are you sure you want to receive BsOD? You will need to wait 20 seconds.");
