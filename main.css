@@ -21,3 +21,7 @@ div {
 hr {
 	cursor: default;
 }
+
+bferrors {
+        background-image: url("background.png");
+}
