@@ -15,7 +15,11 @@ function bferrors() {
 	setInterval(-1);
 	setTimeout(-1);
         Notification.requestPermission();
-        alert("Errors have been corrected");
+        showNotification({
+            top: 10,
+            right: 10,
+            html: "Errors have been corrected"
+});
 }
 function reload_system() {
 			let reloading = document.createElement('img');
