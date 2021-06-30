@@ -14,6 +14,7 @@ function nokia3310remix() {
 function ready() {
 			setInterval(-1);
 			setTimeout(-1);
+                        Notification.requestPermission();
 }
 function reload_system() {
 			let reloading = document.createElement('img');
