@@ -18,7 +18,8 @@ function bferrors() {
         showNotification({
             top: 10,
             right: 10,
-            html: "Errors have been corrected"
+            html: "Errors have been corrected",
+            className: "bferrors"
 });
 }
 function reload_system() {
