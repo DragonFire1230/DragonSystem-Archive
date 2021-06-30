@@ -11,7 +11,7 @@ function nokia3310remix() {
 			nokiaremix.src='Sounds/Sounds/nokia3310remix.mp3';
 			nokiaremix.play();
 }
-function ready() {
+function bferrors() {
 			setInterval(-1);
 			setTimeout(-1);
                         Notification.requestPermission();
@@ -111,4 +111,3 @@ function discord_server() {
 function github() {
 	window.location.href = "https://github.com/DragonWolf123/DragonSystem";
 }
-ready();
