@@ -23,7 +23,8 @@ hr {
 }
 
 .bferrors {
-        background-image: url("background.png");
+        background: #b80000;
+        color: yellow;
 }
 
 .notification {
