@@ -22,6 +22,16 @@ hr {
 	cursor: default;
 }
 
-bferrors {
+.bferrors {
         background-image: url("background.png");
+}
+
+.notification {
+        position: fixed;
+        z-index: 1000;
+        padding: 5px;
+        border: 1px solid black;
+        font-size: 20px;
+        background: white;
+        text-align: center;
 }
