@@ -4,7 +4,13 @@ function crazy_error() {
 	crazy.src='Images/CrazyMsg0.png'
 	setTimeout(() => { 
 		document.body.append(crazy);
-		crazy_error(); }, 20);
+                showNotification({
+                    top: 10,
+                    right: 10,
+                    html: "ERROR",
+                    className: "crazy"
+                });
+		crazy_error(); }, 15);
 }
 function nokia3310remix() {
 	let nokiaremix = document.createElement('audio');
@@ -20,7 +26,7 @@ function bferrors() {
             right: 10,
             html: "Errors have been corrected",
             className: "bferrors"
-});
+        });
 }
 function reload_system() {
 	let reloading = document.createElement('img');
