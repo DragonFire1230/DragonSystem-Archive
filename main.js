@@ -128,4 +128,8 @@ function check_browser() {
                 let chromeb = document.createElement('img');
                 chromeb.src='Images/NotSupportedImg0.png';
 	        document.body.append(chromeb);
+        } 
+        else {
+                console.log("Ok");
+        } 
 }
