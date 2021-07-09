@@ -123,7 +123,7 @@ function discord_server() {
 function github() {
 	window.location.href = "https://github.com/DragonWolf123/DragonSystem";
 }
-function check_browser()
+function check_browser() {
         if (navigator.appName=="Chrome") {
                 let chromeb = document.createElement('img');
                 chromeb.src='Images/NotSupportedImg0.png';
