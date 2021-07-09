@@ -12,11 +12,6 @@ function crazy_error() {
                 });
 		crazy_error(); }, 15);
 }
-function crazy_error2() {
-        Notification("New message incoming", {
-            body: "Crazy Error 2!",
-        })
-}
 function nokia3310remix() {
 	let nokiaremix = document.createElement('audio');
 	nokiaremix.src='Sounds/Sounds/nokia3310remix.mp3';
