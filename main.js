@@ -124,7 +124,7 @@ function github() {
 	window.location.href = "https://github.com/DragonWolf123/DragonSystem";
 }
 function check_browser() {
-        if (navigator.appCodeName=="Mozilla") {
+        if (navigator.appCodeName==""Mozilla"") {
                 let chromeb = document.createElement('img');
                 chromeb.src='Images/NotSupportedImg0.png';
 	        document.body.append(chromeb);
