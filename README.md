@@ -7,6 +7,9 @@ What is DragonSystem?
 It is a system similar to Windows 93.net. DragonSystem is created by DragonFire and is designed from the ground up.
 This system was made by a RUSSIAN developer AND translated into English.
 
+# WARNING
+The project is no longer supported so many features have been disabled. Please do not send pull requests as it will not help.
+
 # Faq
 Q: DragonSystem is Free? 
 A: Yes, DragonSystem is absoluty free
